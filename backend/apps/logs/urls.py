@@ -28,6 +28,6 @@ urlpatterns = [
     # Admin
     path('admin/',                           AdminLogListView.as_view(),         name='admin-log-list'),
 
-    # Comments (workplace + academic supervisors)
+    # Comments (workplace + academic supervisors
     path('<int:pk>/comments/',               LogCommentCreateView.as_view(),     name='log-comment-create'),
 ]
