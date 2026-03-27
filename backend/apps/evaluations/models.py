@@ -21,7 +21,7 @@ class WorkplaceEvaluation(models.Model):
                        limit_choices_to={'role': 'workplace_supervisor'},
                    )
 
-    # Evaluation criteria (each 0-10)
+    # Evaluaticriteria (each 0-10)
     professionalism   = models.DecimalField(
                             max_digits=4, decimal_places=1,
                             validators=[MinValueValidator(0), MaxValueValidator(10)]
